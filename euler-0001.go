@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"math"
 )
 
@@ -30,13 +29,5 @@ func GaussSummation(x int) int {
 
 	result := 0.5 * ( 3 * fizz * (fizz + 1) + 5 * buzz * (buzz + 1) - 15 * fizzbuzz * (fizzbuzz + 1))
 	return int(result)
-
-}
-
-
-func main() {
-
-	fmt.Println(BruteForce(1000))
-	fmt.Println(GaussSummation(1000))
 
 }
